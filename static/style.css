@@ -33,6 +33,8 @@
 .navbar-logo {
   font-weight: 900;
   font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .nav-item:hover {
