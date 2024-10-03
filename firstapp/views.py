@@ -1,5 +1,9 @@
 from django.shortcuts import render
+from .models import User
+from django.http import HttpResponse
 
 # Create your views here.
 def firstapp(request):
-    return render(request, 'firstapp/index.html')
+    users = User.objects.all()
+    return render(request, 'firstapp/index.html', {'users': users})
+    
